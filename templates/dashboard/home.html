@@ -1,0 +1,30 @@
+{% extends 'account/base.html' %}
+
+{% block content %}
+    <div class="text-center">
+        <h2>Home</h2>
+      
+        <p>Hola: {{ user }}!</p>
+        <p>Usuario : {{ user }}</p>
+        <a class="btn btn-dark" href="{% url 'socialaccount_connections' %}">Conexiones</a>
+
+        <h3>Materia: Programación</h3>
+
+        <h3>Puntos extras:
+            Registro mediante cuentas Google, Microsoft, Facebook, etc.
+        </h3>
+        <h4> 
+            Docente:
+            Dr. Roberto Alan Beltrán Vargas
+        </h4>
+        <h4>
+            Alumno: José Martínez Hermosa
+        </h4>
+        <h4>
+            MTI, Ago 2023
+        </h4>
+        <h4>
+            Django con allauth y crispy_forms
+        </h4>
+    </div>
+{% endblock %}
